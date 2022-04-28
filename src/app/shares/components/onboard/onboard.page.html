@@ -1,0 +1,55 @@
+<ion-content>
+  <ion-slides pager="false">
+    <ion-slide class="w-screen h-screen bg-teal-300">
+      <div class="h-full">
+        <div class="h-2/3 bg-white bg-repeat-round flex flex-col justify-end" style="border-bottom-left-radius: 50px; background-image: url('/assets/doctor1.jpg');">
+          <div class="bg-white h-36 flex justify-end items-end bg-gradient" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, sunt?</div>
+        </div>
+        <div class="h-1/3 flex flex-col items-center justify-center space-y-10">
+          <div class="flex space-x-3">
+            <div class="bg-white w-5 h-5 rounded-full"></div>
+            <div class="bg-white w-5 h-5 rounded-full" [ngClass]="index ?'opacity-50':''"></div>
+            <div class="bg-white w-5 h-5 rounded-full" [ngClass]="index ?'opacity-50':''"></div>
+          </div>
+          <button class="bg-white text-teal-300 rounded-2xl w-36 h-10 text-xl" (click)="next()">Continue</button>
+          <div class="text-white opacity-70">Lorem, ipsum dolor.</div>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide class="w-screen h-screen bg-teal-300">
+      <div class="h-full">
+        <div class="h-2/3 bg-white bg-repeat-round flex flex-col justify-end" style="border-bottom-left-radius: 50px; background-image: url('/assets/doctor2.jpg');">
+          <div class="bg-white h-36 flex justify-end items-end bg-gradient">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, sunt?</div>
+        </div>
+        <div class="h-1/3 flex flex-col items-center justify-center space-y-10">
+          <div class="flex space-x-3">
+            <div class="bg-white w-5 h-5 rounded-full" [ngClass]="index ?'opacity-50':''"></div>
+            <div class="bg-white w-5 h-5 rounded-full"></div>
+            <div class="bg-white w-5 h-5 rounded-full" [ngClass]="index ?'opacity-50':''"></div>
+          </div>
+          <button class="bg-white text-teal-300 rounded-2xl w-36 h-10 text-xl" (click)="next()">Continue</button>
+          <div class="text-white opacity-70">Lorem, ipsum dolor.</div>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide class="w-screen h-screen bg-teal-300">
+      <div class="h-full">
+        <div class="h-2/3 bg-white bg-repeat-round flex flex-col justify-end" style="border-bottom-left-radius: 50px; background-image: url('/assets/doctor3.jpg');">
+          <div class="bg-white h-36 flex justify-end items-end bg-gradient">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, sunt?</div>
+        </div>
+        <div class="h-1/3 flex flex-col items-center justify-center space-y-10">
+          <div class="flex space-x-3">
+            <div class="bg-white w-5 h-5 rounded-full opacity-50"></div>
+            <div class="bg-white w-5 h-5 rounded-full opacity-50"></div>
+            <div class="bg-white w-5 h-5 rounded-full"></div>
+          </div>
+          <div class="space-x-10">
+            <button class="bg-white text-teal-300 rounded-2xl w-36 h-10 text-xl" routerLink="/inscriptio">S'inscrire</button>
+            <button class="bg-white text-teal-300 rounded-2xl w-36 h-10 text-xl" routerLink="/connexion">Se connecter</button>
+          </div>
+          <div class="text-white opacity-70">Lorem, ipsum dolor.</div>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
